@@ -1,0 +1,60 @@
+input[type="text"] {
+    height: 1.8rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.25rem 2.2rem 0.25rem 0.5rem;
+    background: linear-gradient(to top, rgb(216, 216, 216), rgb(255, 255, 255));
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+button {
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 1.2rem;
+    color: gray;
+    transition: transform 0.2s ease-out;
+    padding: 0.25rem;
+    padding-right: 0.6rem;
+
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in;
+}
+
+.checkWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0.5rem;
+}
+
+.checkContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+
+.checkContainer label {
+    color: var(--primary-color);
+    user-select: none;
+    font-size: 0.9rem;
+    padding-right: 0.25rem;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    font-family: "Mukta", sans-serif;
+    font-weight: 300;
+}
+
+.checkContainer input[type="radio"] {
+    cursor: pointer;
+}

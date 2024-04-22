@@ -1,0 +1,102 @@
+.background {
+    background-color: rgb(24, 24, 24);
+    min-height: 100vh;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.backdrop {
+    user-select: none;
+    width: 100%;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%);}
+
+.textContainer {
+    z-index: 1;
+    color: white;
+    position: relative;
+    padding: 0 0.25rem;
+}
+
+.contentContainer {
+    max-width: 1024px;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.textContainer h2 {
+    font-size: 3rem;
+    position: absolute;
+    bottom: 120%;
+}
+
+.trailerWrapper h3 {
+    color: white;
+    font-size: 2rem;
+}
+
+.plot {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    max-width: 80ch;
+}
+
+.detailsTitle {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    position: relative;
+}
+
+.detailsTitle::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(to right, transparent, white, transparent);
+    bottom: 0;
+    left: 0;
+}
+
+.detailsSubtitle {
+    font-size: 1rem;
+}
+
+.trailerWrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.detailsWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    gap: 1rem;
+}
+
+.detailsContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1;
+    border: 1px solid white;
+    gap: 1.5rem;
+    padding: 0.5rem 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.detailsContainer a {
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .detailsWrapper {
+        padding: 0 0.5rem;
+        flex-direction: column-reverse;
+    }
+}
