@@ -1,4 +1,4 @@
-.navbar {
+nav {
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -6,10 +6,26 @@
     background: linear-gradient(to bottom, var(--secondary-color), var(--secondary-color-dark));
     background-color: var(--secondary-color);
     padding: 0.25rem;
-    align-items: stretch;
+    /* align-items: stretch; */
     user-select: none;
-    height: 60px;
+    /* height: 60px; */
     z-index: 5;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0 0.5rem;
+}
+
+nav li {
+    padding: 0.25rem;
 }
 
 .title {
@@ -23,28 +39,21 @@
     font-weight: 600;
     font-size: 1rem;
     color: var(--primary-color);
-}
-
-.list {
-    display: flex;
-    gap: 0.5rem;
-    list-style: none;
-    margin: 0 0.5rem;
-}
-
-.listItem {
-    padding: 0.25rem;
-}
-
-.anchor {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 0 0.5rem;
+    padding: 0.5rem;
     border-radius: 10%;
+    margin: 0 auto;
 }
 
-.anchor:hover {
+.subtitle:hover {
     background-color: rgba(88, 88, 88, 0.2);
+    transition: background-color 0.1s ease-in;
+}
+
+.disabled {
+    opacity: 50%;
+    cursor: default;
+}
+
+.disabled:hover {
+    background-color: inherit;
 }
